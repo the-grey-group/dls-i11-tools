@@ -97,7 +97,12 @@ with open(csv_filepath, 'r') as csvfile:
             time = float(row[2])
             samplepos = float(row[3])
 
+            # Select the sample in <position> in the carousel
             pos sample position
+            # Some capillaries might be shorter than others (especially if a dumb theorist is the one who packed them, *ahem*).
+            # `spos` can be adjusted to align the capillary with the beam, as a column in the CSV file.
+            # Warning: in March, this number could be in the range 0-5, but setting `spos` to 5 will crash GDA (it is a hard upper limit).
+            # Using 4.9 would work.
             pos spos samplepos
             scan delta 2 2.25 0.25 smythen time
             fh.write('{} {} {} {} seconds PSD scan at room temperature, spos = {} mm, {} \n'.format(
