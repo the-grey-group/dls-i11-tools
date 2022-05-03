@@ -2,7 +2,11 @@
 # -*- coding: utf-8 -*-
 
 """This module defines some useful classes for developing
-scripts for the i11 beamline at Diamond Light Source."""
+scripts for the i11 beamline at Diamond Light Source.
+
+"""
+
+__author__ = "Matthew Evans"
 
 __all__ = (
     "LOG",
