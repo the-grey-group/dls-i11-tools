@@ -19,3 +19,10 @@ I11 has two types of detectors:
 
 I11 uses [GDA](http://www.opengda.org/OpenGDA/Documentation.html) server to control all apparatus.
 GDA can be scripted with [Jython](https://www.jython.org/) (a Java implementation of Python 2.7) and uses [beamline-specific extensions](https://alfred.diamond.ac.uk/documentation/manuals/GDA_User_Guide/master/writing_scripts.html) (implemented as keywords, e.g., `pos <scannable> <position>`) to position samples, detectors, etc.
+
+## Contributors
+
+If you are interested in these scripts then drop us a line!
+
+- Matthew Evans
+- Joshua Bocarsly
